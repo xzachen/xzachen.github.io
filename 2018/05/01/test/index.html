@@ -162,7 +162,7 @@
 
     <style>
       body{
-        background-color: #F5F5F5;
+        background-color: #7C9DBE;
       }
 
       /* blog_info bottom background */
@@ -403,6 +403,18 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbElEQVR42u3au3LjMBAEQP3/T9vpJUfNLB6WXc3IJckiegMCmt3X15++Xnh4eHh4eHh4eB/Ge8XXmy99/Py/r/zv3efX87Xh4eHh3eElS08wz68/FyW5b7Q2PDw8vIu8ZHEzUlKO5y0kLxweHh7eZ/Jm28OusuLh4eH9Xl5yXM5fSd7Fw8PD+zRe8oM/+Xx+XG5LeTxrwcPDw4t5eZPp/t9X+3t4eHh4Aa8eaYpL0B6pjwxd4eHh4R3g5Q/iHP/8bbs2Bjw8PLyf4s1iiHysKokPku9PSoaHh4d3h9eOWLUBaxvjts2waN/Dw8PDO8xbCSaSJlYbYeRbAh4eHt59XhsK7B0myEONN/+Lh4eH90O8lSVGj+/4e/INCQ8PD+8OLw9t84ihLc3eDQkPDw/vDi9/lM8e4nmskLe+itEBPDw8vK28/Bjdxge7yle3yvDw8PAO81rAbJigLdDsCI6Hh4d3k5ccZzeHrQtjXsXoAB4eHt4BXtvOz8OFNoRNyjEMI/Dw8PCO5Zzt4vL21UqMu2HoCg8PD+8AbzY2mgCSu8xKU6TUeHh4eAd4eQNsdphOAoi2VVbve3h4eHjHeG38WjT1R2FuXiY8PDy8+7x2obNgd32DebNaPDw8vMO89prdchbgDjckPDw8vMO82UO5HdVKNqE2vKgbYHh4eHhbeXmMm99y5QC9eWPAw8PDO8ZbaVzNDtxtkBFFJ3h4eHi/hLc36l1qs+Hh4eF9JC+JJ5JDeds2i34A4OHh4V3k5cudBRZJG2xlBAEPDw/vJm/lgLsyLtCWIyk6Hh4e3mne37vw8PDw8PDw8PA+4PoGEcDOSr6Yp3UAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
 
     <!-- Tags (bookmark) -->
     
@@ -485,6 +497,32 @@
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        //id: '页面 ID', // 可选。默认为 location.href
+        owner: 'xzachen',
+        repo: 'xzachen.github.io',
+        oauth: {
+            client_id: 'cebd3e1d844db0dcf53a',
+            client_secret: '5c74677b0540e6c279cbbe8de5b36dda2f397e46',
+        },
+    })
+    gitment.render('container')
+</script>
+
                 
             </div>
 
@@ -597,6 +635,21 @@
     
 
     <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                
+            </ul>
+        </li>
+        
     
 
     <!-- Pages  -->
@@ -777,6 +830,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+   <!-- Gitment -->
 
 
 
