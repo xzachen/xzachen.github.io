@@ -494,12 +494,12 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>测试一下音乐播放！<br>
-    <div id="cplayer-63917662"></div>
+    <div id="cplayer-55297795"></div>
     <script>
       (function(){
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-63917662"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-55297795"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = function add163(id) {
             if (!id) throw new Error("Unable Property.");
             return fetch("https://music.huaji8.top/?id=" + id).then(function(res){return res.json()}).then(function(data){
@@ -516,15 +516,15 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-63917662"] = new cplayer({
-            element: document.getElementById("cplayer-63917662"),
+          window.cplayerList["cplayer-55297795"] = new cplayer({
+            element: document.getElementById("cplayer-55297795"),
             playlist: [{"name":"チルドレンレコード","artist":"96猫,伊東歌詞太郎","poster":"https://cplayer.js.org/801422833716a4f0f96ff6dff1f77dfe.jpg","src":"https://cplayer.js.org/8af423669c27d265bb129d04a927044f.mp3"}],
             generateBeforeElement: true,
             deleteElementAfterGenerate: true,
             autoplay: false
           });
 
-          window.cplayerList["cplayer-63917662"].add163(554241732)
+          window.cplayerList["cplayer-55297795"].add163(554241732)
         }
         
         if (typeof window.cplayer === 'undefined' && !document.getElementById("cplayer-script")) {
